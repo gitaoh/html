@@ -6,6 +6,7 @@ It includes lang attribute setting the primary language of the document
 <html lang="en">
 	<!-- <head> acts as a container for the stuff a developer wants to
         include on the page but is nt shown to the page viewer -->
+
 	<head>
 		<!-- This <meta> tag sets the charset the document will use i.e, UTF-8 -->
 		<meta charset="UTF-8" />
@@ -14,22 +15,13 @@ It includes lang attribute setting the primary language of the document
      shringking them down -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="author" content="gitaoh" />
-		<meta
-			name="description"
-			content="The MDN Web Docs Learning Area aims to provide
+		<meta name="description" content="The MDN Web Docs Learning Area aims to provide
 					complete beginners to the Web with all they need to know to get
-					started with developing websites and applications."
-		/>
-		<meta
-			property="og:image"
-			content="https://developer.mozilla.org/mdn-social-share.png"
-		/>
-		<meta
-			property="og:description"
-			content="The Mozilla Developer Network (MDN) provides
+					started with developing websites and applications." />
+		<meta property="og:image" content="https://developer.mozilla.org/mdn-social-share.png" />
+		<meta property="og:description" content="The Mozilla Developer Network (MDN) provides
 				information about Open Web technologies including HTML, CSS, and APIs for both websites
-				and HTML Apps."
-		/>
+				and HTML Apps." />
 		<meta property="og:title" content="Mozilla Developer Network" />
 
 		<!-- Basic ICON. formats include: .gif, ico, .png -->
@@ -37,23 +29,11 @@ It includes lang attribute setting the primary language of the document
 		<!-- 2x resolution iPhone and other devices: -->
 		<link rel="apple-touch-icon" href="/apple-touch-icon-120x120.png" />
 		<!-- iPad Pro with high-resolution Retina display: -->
-		<link
-			rel="apple-touch-icon"
-			sizes="167x167"
-			href="/apple-touch-icon-167x167.png"
-		/>
+		<link rel="apple-touch-icon" sizes="167x167" href="/apple-touch-icon-167x167.png" />
 		<!-- 3x resolution iPhone: -->
-		<link
-			rel="apple-touch-icon"
-			sizes="180x180"
-			href="/apple-touch-icon-180x180.png"
-		/>
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
 		<!-- non-Retina iPad, iPad mini, etc.: -->
-		<link
-			rel="apple-touch-icon"
-			sizes="152x152"
-			href="/apple-touch-icon-152x152.png"
-		/>
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
 		<!-- ADDING CSS -->
 		<link rel="stylesheet" href="style.css" />
 		<!-- Adding Javascript -->
@@ -62,6 +42,7 @@ It includes lang attribute setting the primary language of the document
 	</head>
 	<!-- The <body> tag contains all the content a developer wants to show to the
     web user ie. texts, image, video, form, games, audio -->
+
 	<body>
 		<!-- Void Elements -->
 		<img src="image.png" alt="Image" />
@@ -130,9 +111,7 @@ It includes lang attribute setting the primary language of the document
 		</dl>
 
 		<!-- BLOCKQUOTE -->
-		<blockquote
-			cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote"
-		>
+		<blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
 			<p>
 				The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or
 				<em>HTML Block Quotation Element</em>) indicates that the enclosed text
@@ -149,8 +128,106 @@ It includes lang attribute setting the primary language of the document
 		</p>
 
 		<!-- Video -->
-		 <video src=""></video>
-		 <!-- Audio -->
-		  <audio src=""></audio>
+		<video src="" controls>A video</video>
+		<!-- Audio -->
+		<audio controls src="">An audio file</audio>
+
+		<!-- Table -->
+		<table>
+			<caption>This is a table</caption>
+			<thead>
+				<tr>
+					<td>&nbsp;</td>
+					<th scope="col">Name</th>
+					<th scope="col">Age</td>
+					<th scope="col">Class</td>
+					<th scope="col">Nationality</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">Breed</th>
+					<td>Jack Russell</td>
+					<td>Poodle</td>
+					<td>Streetdog</td>
+					<td>Cocker Spaniel</td>
+				</tr>
+			</tbody>
+			<tfoot></tfoot>
+		</table>
+
+		<!-- Button -->
+		<button type="button">Button</button>
+
+		<!-- Form -->
+		<form action="" method="post">
+			<h2>Subscribe to our newsletter</h2>
+			<p>
+				<label for="name">Name (required):</label>
+				<input type="text" name="name" id="name" required />
+			</p>
+			<p>
+				<label for="email">Email (required):</label>
+				<input type="email" name="email" id="email" required />
+			</p>
+			<p>
+				<button>Sign me up!</button>
+			</p>
+		</form>
+		<!-- Form with fieldsets, selects -->
+		<form action="./payment_page" method="get">
+			<h2>Register for the meetup</h2>
+			<p>
+			<fieldset>
+				<legend>Choose hotel room type (required):</legend>
+				<div>
+					<input type="radio" id="hotelChoice1" name="hotel" value="economy" checked />
+					<label for="hotelChoice1">Economy (+$0)</label>
+
+					<input type="radio" id="hotelChoice2" name="hotel" value="superior" />
+					<label for="hotelChoice2">Superior (+$50)</label>
+
+					<input type="radio" id="hotelChoice3" name="hotel" value="penthouse" disabled />
+					<label for="hotelChoice3">Penthouse (+$150)</label>
+				</div>
+			</fieldset>
+			</p>
+			<p>
+			<fieldset>
+				<legend>Choose classes to attend:</legend>
+				<div>
+					<input type="checkbox" id="yoga" name="yoga" />
+					<label for="yoga">Yoga (+$10)</label>
+
+					<input type="checkbox" id="coffee" name="coffee" />
+					<label for="coffee">Coffee roasting (+$20)</label>
+
+					<input type="checkbox" id="balloon" name="balloon" />
+					<label for="balloon">Balloon animal art (+$5)</label>
+				</div>
+			</fieldset>
+			</p>
+			<p>
+				<label for="transport">How are you getting here:</label>
+				<select name="transport" id="transport">
+					<option value="">--Please choose an option--</option>
+					<option value="plane">Plane</option>
+					<option value="bike">Bike</option>
+					<option value="walk">Walk</option>
+					<option value="bus">Bus</option>
+					<option value="train">Train</option>
+					<option value="jetPack">Jet pack</option>
+				</select>
+			</p>
+			<p>
+				<label for="comments">Any other comments:</label>
+				<textarea id="comments" name="comments" rows="5" cols="33"></textarea>
+			</p>
+			<p>
+				<button>Continue to payment</button>
+			</p>
+		</form>
+
 	</body>
+
 </html>

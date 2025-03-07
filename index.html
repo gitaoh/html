@@ -1,0 +1,156 @@
+<!-- Doctype Make sure the document behaves correctly on the browser -->
+<!DOCTYPE html>
+<!-- HTML tag wraps all the content on the page also known as root element
+It includes lang attribute setting the primary language of the document
+-->
+<html lang="en">
+	<!-- <head> acts as a container for the stuff a developer wants to
+        include on the page but is nt shown to the page viewer -->
+	<head>
+		<!-- This <meta> tag sets the charset the document will use i.e, UTF-8 -->
+		<meta charset="UTF-8" />
+		<!-- This <meta> tag ensures the page renders at the viewport width,
+     preventing mobile browsers from rendering pages wider than the viewport and then
+     shringking them down -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="gitaoh" />
+		<meta
+			name="description"
+			content="The MDN Web Docs Learning Area aims to provide
+					complete beginners to the Web with all they need to know to get
+					started with developing websites and applications."
+		/>
+		<meta
+			property="og:image"
+			content="https://developer.mozilla.org/mdn-social-share.png"
+		/>
+		<meta
+			property="og:description"
+			content="The Mozilla Developer Network (MDN) provides
+				information about Open Web technologies including HTML, CSS, and APIs for both websites
+				and HTML Apps."
+		/>
+		<meta property="og:title" content="Mozilla Developer Network" />
+
+		<!-- Basic ICON. formats include: .gif, ico, .png -->
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<!-- 2x resolution iPhone and other devices: -->
+		<link rel="apple-touch-icon" href="/apple-touch-icon-120x120.png" />
+		<!-- iPad Pro with high-resolution Retina display: -->
+		<link
+			rel="apple-touch-icon"
+			sizes="167x167"
+			href="/apple-touch-icon-167x167.png"
+		/>
+		<!-- 3x resolution iPhone: -->
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/apple-touch-icon-180x180.png"
+		/>
+		<!-- non-Retina iPad, iPad mini, etc.: -->
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="/apple-touch-icon-152x152.png"
+		/>
+		<!-- ADDING CSS -->
+		<link rel="stylesheet" href="style.css" />
+		<!-- Adding Javascript -->
+		<script src="file.js"></script>
+		<title>Document</title>
+	</head>
+	<!-- The <body> tag contains all the content a developer wants to show to the
+    web user ie. texts, image, video, form, games, audio -->
+	<body>
+		<!-- Void Elements -->
+		<img src="image.png" alt="Image" />
+
+		<!-- HEADINGS -->
+		<h1>Heading 1</h1>
+		<h2>Heading 2</h2>
+		<h3>Heading 3</h3>
+		<h4>Heading 4</h4>
+		<h5>Heading 5</h5>
+		<h6>Heading 6</h6>
+
+		<!-- Paragraph -->
+		<p>
+			At Mozilla, we're a global community of technologists, thinkers, and
+			builders working together…
+		</p>
+
+		<ul>
+			<li>technologists</li>
+			<li>thinkers</li>
+			<li>builders</li>
+		</ul>
+
+		<p>working together…</p>
+
+		<!-- Links -->
+		<a href="https://www.mozilla.org/en-US/about/manifesto/">
+			Mozilla Manifesto
+		</a>
+
+		<!-- Emphasis and Importance -->
+		<i>Italic</i>
+		<b>Bold</b>
+		<u>Underline</u>
+
+		<!-- UnOrdered List -->
+		<ul>
+			<li>List Item</li>
+		</ul>
+
+		<!-- Ordered List -->
+		<ol>
+			<li>List Item</li>
+		</ol>
+
+		<!-- Description Lists -->
+		<dl>
+			<dt>soliloquy</dt>
+			<dd>
+				In drama, where a character speaks to themselves, representing their
+				inner thoughts or feelings and in the process relaying them to the
+				audience (but not to other characters.)
+			</dd>
+			<dt>monologue</dt>
+			<dd>
+				In drama, where a character speaks their thoughts out loud to share them
+				with the audience and any other characters present.
+			</dd>
+			<dt>aside</dt>
+			<dd>
+				In drama, where a character shares a comment only with the audience for
+				humorous or dramatic effect. This is usually a feeling, thought, or
+				piece of additional background information.
+			</dd>
+		</dl>
+
+		<!-- BLOCKQUOTE -->
+		<blockquote
+			cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote"
+		>
+			<p>
+				The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or
+				<em>HTML Block Quotation Element</em>) indicates that the enclosed text
+				is an extended quotation.
+			</p>
+		</blockquote>
+
+		<!-- Inline Quotations -->
+		<p>
+			The quote element — <code>&lt;q&gt;</code> — is
+			<q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">
+				intended for short quotations that don't require paragraph breaks.
+			</q>
+		</p>
+
+		<!-- Video -->
+		 <video src=""></video>
+		 <!-- Audio -->
+		  <audio src=""></audio>
+	</body>
+</html>
